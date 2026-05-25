@@ -1,2 +1,11 @@
-# Main-SOC-Project
-My Main SOC Project that features Fileless Malware Detection using Sysmon &amp; PowerShell
+# Fileless Malware Detection using Sysmon &amp; PowerShell
+
+
+
+https://github.com/user-attachments/assets/f7220d15-600d-4c27-b1fc-ed5290968f63
+
+
+
+
+
+
