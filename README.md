@@ -1,7 +1,7 @@
 # Fileless Malware Detection using Sysmon &amp; PowerShell
 
 # Objective
-- The objective of this project was to simulate and detect fileless malware using Sysmon telemetry & custom PowerShell based detections. This project spotlights fileless malware that real-time traditional security tools often miss by using custom detection scripts that search constantly for such malware by using special rules.
+- The objective of this project was to simulate and detect fileless malware using Sysmon telemetry & custom PowerShell based detections. This project spotlights fileless malware that real-time traditional security tools often fail to detect by using custom detection scripts that search constantly for such malware by using custom detection logic.
 
 # Technologies used
 - Custom detection scripts
@@ -67,7 +67,7 @@ https://github.com/user-attachments/assets/f7220d15-600d-4c27-b1fc-ed5290968f63
 
 # Conclusion
 
-- By creating customized detection scripts and launching fileless malware attacks, the project shows how easy malware can run without any evidence in the background and how traditonal security tools (Windows Security) often miss such attacks. The project emphasizes how fileless malware is often missed and with the help of customized PowerShell scripts can be detected real-time.
+- By creating customized detection scripts and launching fileless malware attacks, the project shows how easy malware can run without any evidence in the background and how traditonal security tools (Windows Security) often fail to detect such attacks. The project emphasizes how fileless malware is often missed and with the help of customized PowerShell scripts can be detected real-time.
 
 
 
