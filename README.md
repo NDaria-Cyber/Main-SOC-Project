@@ -35,12 +35,41 @@
 | Download execution         | `DownloadString`             |
 | Script execution           | `IEX`                        |
 | Script download | `IRM`
-| Suspicious Office activity | `WINWORD.exe → powershell.exe` |
+| Suspicious Office activity | `WINWORD.exe → cmd.exe / PowerShell.exe` |
 | Suspicious legitimate services | `mshta.exe → vbscript` |
 
 
 # Demo / Video
 https://github.com/user-attachments/assets/f7220d15-600d-4c27-b1fc-ed5290968f63
+
+# Screenshots / Evidence
+
+**Suspicious PowerShell Commmand line detected by real-time monitor**
+
+<img width="848" height="722" alt="image" src="https://github.com/user-attachments/assets/bfd35770-ec98-4710-8e6a-1d4814fb3dd2"/>
+
+**Suspicious mshta.exe execution detection**
+
+<img width="844" height="712" alt="image" src="https://github.com/user-attachments/assets/ae11bf3b-d3cd-4387-8f97-e2ded9be1b72" />
+
+**Sysmon Event Viewer Macro Attack Detection**
+
+<img width="1023" height="848" alt="Winword-PowerShell_" src="https://github.com/user-attachments/assets/9eb4f3db-bc58-46ba-bd9d-a6b597ad7eb8" />
+
+1 : Opened Sysmon - Operational in order to have more details in the logs.
+
+2 : Filtered for Event IDs 1 (Process Create) for time efficiency
+
+3 : The child image of this relationship is cmd.exe
+
+4 : The child's command line is the suspicious external download link
+
+5 : As shown, the parent image and command line ( the process that initiated the relationship) are WINWORD.EXE and they have cmd.exe as their child, which is suspicious.
+
+
+
+
+
 
 # What I learned
 - How to correlate multiple Event IDs to identify a single attack chain
